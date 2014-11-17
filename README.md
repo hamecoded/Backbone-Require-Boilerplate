@@ -8,7 +8,7 @@ Technology Stack: node, npm, git, grunt, expressjs, requirejs, backbonejs, mario
 Install
 ----
 ```sh
-git clone --depth 1 -b boilerplate --single-branch git@github.com:hamecoded/Backbone-Require-Boilerplate.git
+git clone --depth 1 --single-branch git@github.com:hamecoded/Backbone-Require-Boilerplate.git newProject
 ```
 
 Develop
@@ -33,7 +33,7 @@ NODE_ENV=production node server.js
 
 Common Pitfalls
 ----
-For the application to run off of dist folder you must set an http server to root into that directory, otherwize routing won't take place. Consider using ngrok.com for that task if you aren't on the root http dir `./ngrok 127.0.0.1:80/myBlog/dist/`.  
+For the application to run off of dist folder you must set an http server to root into that directory, otherwize routing won't take place. Consider using ngrok.com for that task if you aren't on the root http dir `./ngrok 127.0.0.1:80/newProject/dist/`.  
 
 License
 ----
