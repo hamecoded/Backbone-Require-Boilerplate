@@ -10,7 +10,11 @@ Install
 ```sh
 git clone --depth 1 --single-branch git@github.com:hamecoded/Backbone-Require-Boilerplate.git newProject
 ```
-
+Sometime you'd like to delete the `.git` directory, for example if the project will be nested under an existing git repository. To do so execute:
+```sh
+	rm -rf .git
+```
+  
 Develop
 ----
 ```sh
