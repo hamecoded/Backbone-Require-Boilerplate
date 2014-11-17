@@ -1,0 +1,16 @@
+<div class="items table-responsive">
+  <table class="table table-hover">
+{{#.}}
+    <tr class="item" data-id="{{id}}">
+    	<td>{{id}}</td>
+    	<td>{{title}}</td>
+    </tr>
+{{/.}}
+  </table>
+</div>
+
+<!-- pager -->
+<ul class="pager">
+    <li class="previous"><a href="javascript:void(0)" data-bypass>&larr; prev</a></li>
+    <li class="next"><a href="javascript:void(0)" data-bypass>next &rarr;</a></li>
+</ul>
