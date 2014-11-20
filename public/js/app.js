@@ -3,12 +3,15 @@ require(["js/require.config"], function (baseConfig) {
     //debugger; //jshint ignore:line
 
     //common requires to be loaded now that the require paths have been set
-    require(["require", "backbone", "marionette", "mustache", "bootstrap"], 
+    require(["require", "backbone", "marionette", "mustache", "bootstrap", "utils/backbone.marionette.overrides"], 
         function(require, backbone, marionette, mustache){
         window.Mustache = mustache; //http://stackoverflow.com/questions/16556419/requirejs-not-loading-mustache-window-object
 
         //app specific require
-        require(["controllers/AppController"], function (AppController) {
+        require(["controllers/AppController", "utils/SinonFakeServer"], function (AppController, SinonFakeServer) {
+            //TODO: remove in production
+            var sfs = new SinonFakeServer();
+
             window.router = new AppController();
             Backbone.history.start({pushState: true});
 

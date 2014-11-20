@@ -18,6 +18,9 @@
     "marionette": "latest",
     "requirejs": "latest",
     "requirejs-text": "latest",
-    "mustache": "latest"
+    "requirejs-i18n": "latest",
+    "mustache": "latest",
+    "sinon": "http://sinonjs.org/releases/sinon-1.12.1.js"
+
   }
 }

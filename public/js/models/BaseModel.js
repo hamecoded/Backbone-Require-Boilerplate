@@ -3,7 +3,7 @@ define(function(require) {
     
     var BaseModel = Backbone.Model.extend({
     	defaults: {
-            id: 2,
+            id: 3,
     		title: "no title",
     		author: "anonymous",
     		thmbnail: "http://placehold.it/900x300",
@@ -12,7 +12,7 @@ define(function(require) {
     		preview: "no preview",
     		content: null
     	},
-    	urlRoot: "http://private-anon-8393376f0-blog4.apiary-mock.com/posts/" //for loading independently of being associated to a collection
+    	urlRoot: "/api/posts"
 
 
     });

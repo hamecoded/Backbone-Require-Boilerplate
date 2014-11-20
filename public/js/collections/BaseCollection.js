@@ -10,7 +10,7 @@ define(function(require) {
 
     var BaseCollection = Backbone.Collection.extend({
     	model: BaseModel,
-    	url: "http://private-anon-8393376f0-blog4.apiary-mock.com/posts",
+    	url: "/api/posts",
         initialize: function(options){
             this.on("error", this.error, this);
             this.fetch({reset: true, parse: true});

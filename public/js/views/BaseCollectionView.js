@@ -39,7 +39,7 @@ define(function(require) {
         showBase: function (event) {
             console.log('BaseCollectionView:showBase');
             var id= $(event.currentTarget).data('id');
-            window.router.navigate("/base/" + id, {trigger: true, replace: true});
+            window.router.navigate("/posts/" + id, {trigger: true}); //TODO: do not use trigger true in app-routing, will confuse url-routing
         }
 		
 

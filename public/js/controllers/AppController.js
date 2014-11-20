@@ -13,15 +13,15 @@ define(["require",
     var AppController = Backbone.Router.extend({
     	routes: {
     		"": "home",
-    		"base(/)": "showWidgets",
-            "base/:id": "showWidget"
+    		"posts(/)": "showWidgets",
+            "posts/:id": "showWidget"
     	},
     	initialize: function(){
 
     	},
 		// Handlers
 		home: function(){
-			this.navigate("/base", {trigger: true, replace: true});
+			this.navigate("/posts", {trigger: true, replace: true});
 		},
         showWidgets: function () {
             console.log("AppController:showWidgets");

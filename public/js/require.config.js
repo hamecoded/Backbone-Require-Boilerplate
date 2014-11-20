@@ -18,6 +18,8 @@ require.config({
         // Require Modules to be used as pragmas
         // ---------
         "text": "./bower_components/requirejs-text/text",
+        "i18n": "./bower_components/requirejs-i18n/i18n",
+
 
         // Backbone Folder Structure
         // -------------------
@@ -25,7 +27,8 @@ require.config({
         "collections": "js/collections",
         "controllers": "js/controllers",
         "views": "js/views",
-        "templates": "templates"
+        "templates": "templates",
+        "utils": "js/utils"
     },
     "shim":{
         //Globally exposed variables:
