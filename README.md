@@ -1,6 +1,8 @@
 Backbone Client Side Boilerplate
 ======
 
+[![Coverage Status](https://coveralls.io/repos/hamecoded/Backbone-Require-Boilerplate/badge.png)](https://coveralls.io/r/hamecoded/Backbone-Require-Boilerplate)
+
 A modern fullstack web application boilerplate. 
 
 Technology Stack: node, npm, git, grunt, expressjs, requirejs, backbonejs, marionettejs, twitter bootstrap
